@@ -1,0 +1,5 @@
+nyan:
+  image:
+    repository: daviey/nyan-cat-web
+    tag: latest
+    pullPolicy: IfNotPresent

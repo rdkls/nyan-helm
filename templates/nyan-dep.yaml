@@ -1,0 +1,18 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: nyan
+
+spec:
+  template:
+    metadata:
+      labels:
+        name: nyan
+    spec:
+      containers:
+        - name: nyan
+          image: "{{ .Values.nyan.image.repository }}:{{ .Values.nyan.image.tag }}"
+          imagePullPolicy: {{ .Values.nyan.image.pullPolicy }}
+          ports:
+            - containerPort: 80

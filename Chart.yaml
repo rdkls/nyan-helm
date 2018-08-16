@@ -1,0 +1,4 @@
+apiVersion: v1
+description: nyan cat!
+name: nyan
+version: 0.1.0
